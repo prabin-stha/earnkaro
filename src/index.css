@@ -43,6 +43,10 @@ a {
 	color: inherit;
 }
 
+main {
+	background-color: #f1f1f1;
+}
+
 .container {
 	max-width: var(--siz-container);
 	margin: 0 auto;
