@@ -1,0 +1,61 @@
+.profitContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1rem;
+	max-width: 1000px;
+	margin: 0 auto;
+	height: 45px;
+}
+
+.totalProfit {
+	display: flex;
+	flex-direction: column;
+	font-size: 10px;
+	color: #999999;
+}
+
+.profitNumber {
+	font-size: 13px;
+	color: #333333;
+	font-weight: 700;
+}
+
+.button {
+	font-size: 10px;
+	color: #333333;
+	width: 150px;
+	height: 24px;
+	border: 1px solid #333333;
+	padding: 0 7px 0 10px;
+	background-color: transparent;
+	border-radius: 25px;
+}
+
+/* Media */
+@media screen and (min-width: 600px) {
+	.profitContainer {
+		min-height: 70px;
+	}
+
+	.totalProfit {
+		flex-direction: row;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.totalProfit {
+		font-size: 17px;
+	}
+
+	.profitNumber {
+		font-size: 22px;
+	}
+
+	.button {
+		font-size: 14px;
+		width: 212px;
+		height: 36px;
+		letter-spacing: 0.5px;
+	}
+}
