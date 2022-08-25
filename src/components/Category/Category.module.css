@@ -1,0 +1,74 @@
+/* width */
+.filters::-webkit-scrollbar {
+	height: 5px;
+}
+
+/* Track */
+.filters::-webkit-scrollbar-track {
+	background: #ffffff;
+}
+
+/* Handle */
+.filters::-webkit-scrollbar-thumb {
+	background: #cccccc;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+.filters::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.filters {
+	display: flex;
+	border-radius: 10px 10px 0 0;
+	background-color: white;
+	margin: 10px 10px 0 10px;
+	max-height: 85px;
+	gap: 4rem;
+	padding: 1.2rem;
+	overflow-x: scroll;
+	color: #333333;
+}
+
+.filters button {
+	position: relative;
+	display: inline-block;
+	width: max-content;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	white-space: nowrap;
+	padding: 0 5px;
+	font-size: 12px;
+	cursor: pointer;
+	color: inherit;
+	letter-spacing: 0.5px;
+}
+
+.filters button.active {
+	font-weight: 700;
+}
+
+.filters button.active::after {
+	position: absolute;
+	bottom: -6px;
+	left: 50%;
+	transform: translateX(-50%);
+	content: '';
+	width: 65%;
+	height: 1px;
+	background-color: red;
+}
+
+.categoryImage {
+	width: 50%;
+	padding: 1rem;
+	max-width: 254px;
+}
+
+@media screen and (min-width: 610px) {
+	.filters button {
+		font-size: 14px;
+	}
+}

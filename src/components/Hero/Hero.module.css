@@ -12,9 +12,21 @@
 	min-width: 200px;
 }
 
+.imageThree {
+	display: none;
+	border: 50%;
+	height: 100%;
+}
+
 /* Media */
 @media screen and (min-width: 660px) {
 	.image {
 		max-height: 250px;
+	}
+}
+
+@media screen and (min-width: 1029px) {
+	.imageThree {
+		display: inline;
 	}
 }

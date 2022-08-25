@@ -15,12 +15,12 @@ const Hero: React.FC = () => {
 				alt='1'
 			/>
 			<img
-				className={`${styles.image} ${styles.imageOne}`}
+				className={`${styles.image} ${styles.imageTwo}`}
 				src={images[1]}
 				alt='2'
 			/>
 			<img
-				className={`${styles.image} ${styles.imageOne}`}
+				className={`${styles.image} ${styles.imageThree}`}
 				src={images[2]}
 				alt='3'
 			/>
