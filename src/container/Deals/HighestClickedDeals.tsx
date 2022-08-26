@@ -1,38 +1,37 @@
+import { DealsCard } from '../../components/Cards';
 import Carousel from '../../components/Carousel';
 
 const HighestClickedDeals: React.FC = () => {
 	return (
 		<Carousel title='AJIO - HIGHEST CLICKED DEALS'>
-			<div className='div'>
-				<div className='innerDiv'>
-					<h3>1</h3>
-				</div>
-			</div>
-			<div className='div'>
-				<div className='innerDiv'>
-					<h3>2</h3>
-				</div>
-			</div>
-			<div className='div'>
-				<div className='innerDiv'>
-					<h3>3</h3>
-				</div>
-			</div>
-			<div className='div'>
-				<div className='innerDiv'>
-					<h3>4</h3>
-				</div>
-			</div>
-			<div className='div'>
-				<div className='innerDiv'>
-					<h3>5</h3>
-				</div>
-			</div>
-			<div className='div'>
-				<div className='innerDiv'>
-					<h3>6</h3>
-				</div>
-			</div>
+			<DealsCard
+				showDealEnd={false}
+				imageLink='https://asset22.ckassets.com/resources/image/staticpage_images/22-aug-ek-DEAL-ajio-6-1661164548.jpg'
+			/>
+			<DealsCard
+				showDealEnd={false}
+				imageLink='https://asset22.ckassets.com/resources/image/staticpage_images/22-aug-ek-DEAL-ajio-6-1661164548.jpg'
+			/>
+			<DealsCard
+				showDealEnd={false}
+				imageLink='https://asset22.ckassets.com/resources/image/staticpage_images/22-aug-ek-DEAL-ajio-6-1661164548.jpg'
+			/>
+			<DealsCard
+				showDealEnd={false}
+				imageLink='https://asset22.ckassets.com/resources/image/staticpage_images/22-aug-ek-DEAL-ajio-6-1661164548.jpg'
+			/>
+			<DealsCard
+				showDealEnd={false}
+				imageLink='https://asset22.ckassets.com/resources/image/staticpage_images/22-aug-ek-DEAL-ajio-6-1661164548.jpg'
+			/>
+			<DealsCard
+				showDealEnd={false}
+				imageLink='https://asset22.ckassets.com/resources/image/staticpage_images/22-aug-ek-DEAL-ajio-6-1661164548.jpg'
+			/>
+			<DealsCard
+				showDealEnd={false}
+				imageLink='https://asset22.ckassets.com/resources/image/staticpage_images/22-aug-ek-DEAL-ajio-6-1661164548.jpg'
+			/>
 		</Carousel>
 	);
 };

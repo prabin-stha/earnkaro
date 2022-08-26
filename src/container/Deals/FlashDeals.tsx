@@ -1,38 +1,33 @@
+import { DealsCard } from '../../components/Cards';
 import Carousel from '../../components/Carousel';
 
 const FlashDeals: React.FC = () => {
 	return (
 		<Carousel title='FLASH DEALS'>
-			<div className='div'>
-				<div className='innerDiv'>
-					<h3>1</h3>
-				</div>
-			</div>
-			<div className='div'>
-				<div className='innerDiv'>
-					<h3>2</h3>
-				</div>
-			</div>
-			<div className='div'>
-				<div className='innerDiv'>
-					<h3>3</h3>
-				</div>
-			</div>
-			<div className='div'>
-				<div className='innerDiv'>
-					<h3>4</h3>
-				</div>
-			</div>
-			<div className='div'>
-				<div className='innerDiv'>
-					<h3>5</h3>
-				</div>
-			</div>
-			<div className='div'>
-				<div className='innerDiv'>
-					<h3>6</h3>
-				</div>
-			</div>
+			<DealsCard
+				showDealEnd={true}
+				imageLink='https://asset22.ckassets.com/resources/image/staticpage_images/25-aug-Flash-Dealcard--1661447492.jpg'
+			/>
+			<DealsCard
+				showDealEnd={true}
+				imageLink='https://asset22.ckassets.com/resources/image/staticpage_images/25-aug-Flash-Dealcard--1661447492.jpg'
+			/>
+			<DealsCard
+				showDealEnd={true}
+				imageLink='https://asset22.ckassets.com/resources/image/staticpage_images/25-aug-Flash-Dealcard--1661447492.jpg'
+			/>
+			<DealsCard
+				showDealEnd={true}
+				imageLink='https://asset22.ckassets.com/resources/image/staticpage_images/25-aug-Flash-Dealcard--1661447492.jpg'
+			/>
+			<DealsCard
+				showDealEnd={true}
+				imageLink='https://asset22.ckassets.com/resources/image/staticpage_images/25-aug-Flash-Dealcard--1661447492.jpg'
+			/>
+			<DealsCard
+				showDealEnd={true}
+				imageLink='https://asset22.ckassets.com/resources/image/staticpage_images/25-aug-Flash-Dealcard--1661447492.jpg'
+			/>
 		</Carousel>
 	);
 };
