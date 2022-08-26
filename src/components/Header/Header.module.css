@@ -36,8 +36,13 @@
 	width: 3.2rem;
 }
 
+.logo {
+	cursor: pointer;
+}
+
 .leftHeaderSearch {
 	display: none;
+	cursor: pointer;
 }
 
 .search {
@@ -73,6 +78,7 @@
 	border: 1px solid white;
 	border-radius: 0 50px 50px 0;
 	min-width: 40px;
+	cursor: pointer;
 }
 
 .rightHeader {
@@ -88,6 +94,7 @@
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
+	cursor: pointer;
 }
 
 .profile {
@@ -100,6 +107,7 @@
 	gap: 1rem;
 	border: none;
 	outline: none;
+	cursor: pointer;
 }
 
 /* Media Queries */

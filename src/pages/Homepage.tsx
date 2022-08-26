@@ -1,10 +1,10 @@
 import React from 'react';
 import Carousel from '../components/Carousel';
 
-import Category from '../components/Category';
 import Header from '../components/Header';
-import Hero from '../components/Hero';
-import Profit from '../components/Profit';
+import Hero from '../container/Hero';
+import Profit from '../container/Profit';
+import Category from '../container/Category';
 
 const Homepage: React.FC = () => {
 	return (
