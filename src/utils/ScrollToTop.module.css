@@ -1,0 +1,22 @@
+.container {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	height: 50px;
+	width: 50px;
+	background-color: #4caf50;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 200ms ease-out;
+	cursor: pointer;
+}
+
+.container:hover {
+	transform: translateY(-16px);
+}
+
+.image {
+	transform: rotate(90deg);
+}

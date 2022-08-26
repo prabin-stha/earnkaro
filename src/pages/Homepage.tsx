@@ -7,6 +7,7 @@ import DealsWrapper from '../container/DealsWrapper';
 import Hero from '../container/Hero';
 import Profit from '../container/Profit';
 import TopRetailers from '../container/TopRetailers';
+import ScrollToTop from '../utils/ScrollToTop';
 
 const Homepage: React.FC = () => {
 	return (
@@ -20,6 +21,7 @@ const Homepage: React.FC = () => {
 				<FlashDeals />
 				<DealsWrapper />
 			</main>
+			<ScrollToTop />
 		</React.Fragment>
 	);
 };
