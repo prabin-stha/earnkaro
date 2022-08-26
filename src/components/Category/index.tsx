@@ -40,7 +40,7 @@ const Category: React.FC = () => {
 	};
 
 	return (
-		<section className='container'>
+		<section className={`container ${styles.categoryContainer} `}>
 			<div className={styles.filters}>
 				<button
 					onClick={() => {

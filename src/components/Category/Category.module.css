@@ -19,6 +19,10 @@
 	background: #555;
 }
 
+.categoryContainer {
+	overflow: hidden;
+}
+
 .filters {
 	display: flex;
 	border-radius: 10px 10px 0 0;

@@ -18,10 +18,18 @@
 	height: 100%;
 }
 
+.imageTwo {
+	display: none;
+}
+
 /* Media */
 @media screen and (min-width: 660px) {
 	.image {
 		max-height: 250px;
+	}
+
+	.imageTwo {
+		display: inline;
 	}
 }
 
