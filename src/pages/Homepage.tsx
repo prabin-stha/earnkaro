@@ -2,6 +2,7 @@ import React from 'react';
 
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header';
+import Navigation from '../components/Navigation';
 import Category from '../container/Category';
 import FlashDeals from '../container/Deals/FlashDeals';
 import DealsWrapper from '../container/DealsWrapper';
@@ -24,6 +25,7 @@ const Homepage: React.FC = () => {
 			</main>
 			<Footer />
 			<ScrollToTop />
+			<Navigation />
 		</React.Fragment>
 	);
 };

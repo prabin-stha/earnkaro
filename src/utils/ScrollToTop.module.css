@@ -20,3 +20,9 @@
 .image {
 	transform: rotate(90deg);
 }
+
+@media screen and (max-width: 780px) {
+	.container {
+		bottom: 7rem;
+	}
+}

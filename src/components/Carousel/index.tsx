@@ -16,6 +16,7 @@ const responsive = [
 			centerPadding: '25px',
 			centerMode: true,
 			slidesToShow: 1,
+			slidesToScroll: 1,
 		},
 	},
 	{
@@ -25,6 +26,7 @@ const responsive = [
 			centerPadding: '25px',
 			centerMode: true,
 			slidesToShow: 1,
+			slidesToScroll: 1,
 		},
 	},
 	{
@@ -34,6 +36,7 @@ const responsive = [
 			centerPadding: '45px',
 			centerMode: true,
 			slidesToShow: 1,
+			slidesToScroll: 1,
 		},
 	},
 	{
@@ -43,6 +46,7 @@ const responsive = [
 			centerPadding: '70px',
 			centerMode: true,
 			slidesToShow: 1,
+			slidesToScroll: 1,
 		},
 	},
 
@@ -53,6 +57,7 @@ const responsive = [
 			centerPadding: '25px',
 			centerMode: true,
 			slidesToShow: 2,
+			slidesToScroll: 1,
 		},
 	},
 	{
