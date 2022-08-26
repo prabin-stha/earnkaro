@@ -1,0 +1,50 @@
+.carouselSection {
+	padding: 2rem 1rem 0 1rem;
+}
+
+.carouselContainer {
+	padding: 1rem 0;
+}
+
+.heading {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	padding-left: 1.5rem;
+	background-color: #4caf50;
+	height: 34px;
+	font-size: 12px;
+	color: white;
+	border-radius: 3px;
+}
+
+.navButton {
+	height: 80px;
+	width: 40px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 10px 0px;
+	background-color: white;
+	border-radius: 3px;
+	background-repeat: no-repeat;
+	background-size: 26px 26px;
+	background-position: center;
+	background-position-x: '50%';
+	cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+	.heading {
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 799px) {
+	.carouselContainer {
+		padding: 1rem 40px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.navButton {
+		display: none;
+	}
+}

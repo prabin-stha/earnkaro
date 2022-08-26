@@ -8,7 +8,7 @@
 	--col-header-bg: #333333;
 
 	/* Size */
-	--siz-container: 1600px;
+	--siz-container: 1700px;
 	--siz-placeholder: 1.8rem;
 }
 
@@ -32,7 +32,6 @@ body {
 	font-family: var(--ff-primary);
 	font-weight: var(--fw-regular);
 	font-size: 1.6rem;
-	overflow: hidden;
 }
 
 li {
@@ -52,4 +51,30 @@ main {
 	max-width: var(--siz-container);
 	margin: 0 auto;
 	height: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	display: none;
+}
+
+.div {
+	height: 312px;
+	width: 312px;
+	padding: 0 0.8rem;
+}
+
+.innerDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #333333;
+	border-radius: 10px;
+	height: 100%;
+}
+
+.div h3 {
+	font-size: 32px;
+	text-align: center;
+	color: #333333;
 }
