@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Footer from '../components/Footer/Footer';
 import Header from '../components/Header';
 import Category from '../container/Category';
 import FlashDeals from '../container/Deals/FlashDeals';
@@ -21,6 +22,7 @@ const Homepage: React.FC = () => {
 				<FlashDeals />
 				<DealsWrapper />
 			</main>
+			<Footer />
 			<ScrollToTop />
 		</React.Fragment>
 	);
