@@ -1,10 +1,10 @@
 import React from 'react';
-import Carousel from '../components/Carousel';
 
 import Header from '../components/Header';
+import Category from '../container/Category';
 import Hero from '../container/Hero';
 import Profit from '../container/Profit';
-import Category from '../container/Category';
+import TopRetailers from '../container/TopRetailers';
 
 const Homepage: React.FC = () => {
 	return (
@@ -14,38 +14,7 @@ const Homepage: React.FC = () => {
 			<main>
 				<Hero />
 				<Category />
-				<Carousel title='TOP RETAILERS'>
-					<div className='div'>
-						<div className='innerDiv'>
-							<h3>1</h3>
-						</div>
-					</div>
-					<div className='div'>
-						<div className='innerDiv'>
-							<h3>1</h3>
-						</div>
-					</div>
-					<div className='div'>
-						<div className='innerDiv'>
-							<h3>1</h3>
-						</div>
-					</div>
-					<div className='div'>
-						<div className='innerDiv'>
-							<h3>1</h3>
-						</div>
-					</div>
-					<div className='div'>
-						<div className='innerDiv'>
-							<h3>1</h3>
-						</div>
-					</div>
-					<div className='div'>
-						<div className='innerDiv'>
-							<h3>1</h3>
-						</div>
-					</div>
-				</Carousel>
+				<TopRetailers />
 			</main>
 		</React.Fragment>
 	);
