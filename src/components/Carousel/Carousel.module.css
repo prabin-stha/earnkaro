@@ -6,16 +6,25 @@
 	padding: 1rem 0;
 }
 
-.heading {
+.header {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	padding: 1rem;
 	padding-left: 1.5rem;
+	padding-right: 3rem;
 	background-color: #4caf50;
-	height: 34px;
-	font-size: 12px;
+	max-height: 34px;
 	color: white;
 	border-radius: 3px;
+}
+
+.viewAll {
+	font-size: 14px;
+}
+
+.viewAll img {
+	transform: rotate(180deg);
 }
 
 .navButton {

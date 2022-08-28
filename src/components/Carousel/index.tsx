@@ -1,12 +1,14 @@
+import React from 'react';
 import Slider from 'react-slick';
 
 import NextArrow from './NextArrow';
 import PrevArrow from './PrevArrow';
 
-import React from 'react';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import styles from './Carousel.module.css';
+
+import angleLeft from '../../static/images/angle_left_white.svg';
 
 const responsive = [
 	{
@@ -102,7 +104,18 @@ const settings = {
 const Carousel: React.FC<any> = props => {
 	return (
 		<section className={`container ${styles.carouselSection}`}>
-			<h1 className={`container ${styles.heading}`}>{props.title}</h1>
+			<h1 className={`container ${styles.header}`}>
+				<p style={{ fontSize: '16px' }}>{props.title}</p>
+				<a className={styles.viewAll} href='#none'>
+					View All{' '}
+					<img
+						src={angleLeft}
+						alt='Caret Left'
+						height='12px'
+						width='12px'
+					/>
+				</a>
+			</h1>
 			<div className={`container ${styles.carouselContainer}`}>
 				<Slider {...settings}>{props.children}</Slider>
 			</div>

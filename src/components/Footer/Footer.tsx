@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
 				</div>
 			</div>
 			<div className={styles.copyright}>
-				<div className='container'>
+				<div className={`container ${styles.copyrightText}`}>
 					(©) Copyright 2022 EarnKaro. All Rights Reserved.
 				</div>
 			</div>

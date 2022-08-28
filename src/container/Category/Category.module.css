@@ -25,7 +25,7 @@
 
 .filters {
 	display: flex;
-	border-radius: 10px 10px 0 0;
+	border-radius: 5px 5px 0 0;
 	background-color: white;
 	margin: 10px 10px 0 10px;
 	max-height: 85px;
@@ -46,6 +46,7 @@
 	padding: 0 5px;
 	font-size: 12px;
 	cursor: pointer;
+	font-family: var(--font-primary);
 	color: inherit;
 	letter-spacing: 0.5px;
 }
@@ -68,11 +69,24 @@
 .categoryImage {
 	width: 50%;
 	padding: 1rem;
-	max-width: 254px;
+	max-width: 280px;
+	border-radius: 25px;
+}
+
+@media screen and (min-width: 570px) {
+	.categoryImage {
+		max-width: 280px;
+	}
 }
 
 @media screen and (min-width: 610px) {
 	.filters button {
 		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.imageContainer {
+		padding-left: 60px;
 	}
 }

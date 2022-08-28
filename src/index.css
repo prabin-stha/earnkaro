@@ -5,16 +5,17 @@
 	--fw-bold: 600;
 
 	/* Colors */
-	--col-header-bg: #333333;
+	--col-header-bg: #222222;
 
 	/* Size */
-	--siz-container: 1700px;
+	--siz-container: 1600px;
 	--siz-placeholder: 1.8rem;
 }
 
 ::placeholder {
 	color: white;
 	opacity: 1;
+	font-family: var(--ff-primary);
 	font-size: var(--siz-placeholder);
 }
 
@@ -33,6 +34,7 @@ body {
 	font-family: var(--ff-primary);
 	font-weight: var(--fw-regular);
 	font-size: 1.6rem;
+	line-height: 1.5;
 }
 
 header {

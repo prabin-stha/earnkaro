@@ -1,5 +1,6 @@
 import styles from './Header.module.css';
 
+import { useState } from 'react';
 import caretDown from '../../static/images/caret_down.svg';
 import earnkaroLogo from '../../static/images/earnkaro_logo.png';
 import headerBg from '../../static/images/header_bg.png';
@@ -10,8 +11,26 @@ import searchIconWhite from '../../static/images/search_white.svg';
 import user from '../../static/images/user.svg';
 
 const Header: React.FC = () => {
+	const [headerHeight, setHeaderHeight] = useState('96px');
+
+	window.onscroll = function () {
+		scrollFunction();
+	};
+
+	function scrollFunction() {
+		if (
+			document.body.scrollTop > 50 ||
+			document.documentElement.scrollTop > 50
+		) {
+			setHeaderHeight('76px');
+		} else {
+			setHeaderHeight('96px');
+		}
+	}
+
 	const headerStyles = {
 		backgroundImage: `url(${headerBg})`,
+		height: headerHeight,
 	};
 
 	return (
@@ -43,6 +62,7 @@ const Header: React.FC = () => {
 					/>
 					<button className={styles.iconContainer}>
 						<img
+							className={styles.searchIcon}
 							src={searchIconBlack}
 							alt='Search Icon'
 							height='20px'

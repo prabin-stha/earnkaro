@@ -141,7 +141,7 @@ const Category: React.FC = () => {
 					className={currentIndex === 12 ? styles.active : ''}
 				>{`Bags & Luggage`}</button>
 			</div>
-			<div>{dataMarkup}</div>
+			<div className={styles.imageContainer}>{dataMarkup}</div>
 		</section>
 	);
 };

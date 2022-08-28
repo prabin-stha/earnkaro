@@ -1,12 +1,13 @@
 .outerContainer {
-	padding: 0 1.5rem;
+	padding: 0 0.5rem;
 }
 
 .innerContainer {
-	max-height: 311px;
+	position: relative;
+	max-height: 312px;
 	max-width: 323px;
 	background-color: white;
-	padding-top: 30px;
+	padding-top: 40px;
 	padding-bottom: 10px;
 	display: flex;
 	flex-direction: column;
@@ -19,10 +20,10 @@
 
 .earn {
 	position: relative;
-	padding: 3rem 0 2rem 0;
+	padding: 3rem 0 1.5rem 0;
 	margin-top: 3.5rem;
-	border-top: 1px solid #444444;
-	border-bottom: 1px solid #444444;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
 	width: 100%;
 	text-align: center;
 }
@@ -33,8 +34,9 @@
 	left: 50%;
 	transform: translateX(-50%);
 	background-color: #f1f1f1;
-	color: #444444;
-	border: 1px solid #444444;
+	color: #555;
+	font-weight: 700;
+	border: 1px solid #555;
 	border-radius: 25px;
 	display: inline;
 	padding: 0.5rem 1rem;
@@ -43,7 +45,7 @@
 
 .rupees {
 	font-size: 22px;
-	color: #444444;
+	color: #555;
 	font-weight: 700;
 }
 
@@ -68,8 +70,8 @@
 }
 
 .copy {
-	border: 1px solid #232323;
-	color: #232323;
+	border: 1px solid #555;
+	color: #555;
 	background-color: transparent;
 	font-weight: 700;
 }
@@ -82,4 +84,30 @@
 	background-color: #4caf50;
 	color: white;
 	border: none;
+}
+
+.ribbon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-top-left-radius: 5px;
+	height: 2.5rem;
+	width: 14.1rem;
+	background-color: #e70505;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: white;
+	font-size: 13px;
+	padding-left: 12px;
+}
+
+.ribbon::before {
+	content: '';
+	position: absolute;
+	left: 14rem;
+	top: 0;
+	border-top: 12.5px solid #e70505;
+	border-bottom: 12.5px solid #e70505;
+	border-right: 12.5px solid transparent;
 }

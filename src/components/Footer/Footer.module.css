@@ -7,10 +7,13 @@
 }
 
 .footerLinksContainer {
+	width: 1200px;
+	margin: 0 auto;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	gap: 10rem;
 	padding: 2rem 0 2rem 0;
+	padding-left: 6rem;
 }
 
 .links {
@@ -21,6 +24,7 @@
 .links a {
 	display: block;
 	padding-bottom: 1.5rem;
+	font-size: 12px;
 }
 
 .links a img {
@@ -29,18 +33,12 @@
 	letter-spacing: 0.5px;
 }
 
-.navigate {
-}
-
-.follow {
-}
-
 .download {
 	display: none;
 }
 
-.footerHeading {
-	font-size: 16px;
+h3.footerHeading {
+	font-size: 14px;
 	color: #40a133;
 	padding-bottom: 2rem;
 	letter-spacing: 0.5px;
@@ -52,6 +50,9 @@
 	background-color: #222222;
 	color: #b1b1b1;
 	height: 60px;
+}
+
+.copyrightText {
 	font-size: 14px;
 }
 

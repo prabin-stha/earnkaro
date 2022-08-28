@@ -6,6 +6,7 @@ const RetailersCard: React.FC = () => {
 	return (
 		<div className={styles.outerContainer}>
 			<div className={styles.innerContainer}>
+				<div className={styles.ribbon}>15% OFF SITEWIDE</div>
 				<img
 					src='https://asset20.ckassets.com/resources/image/stores/wow-skin-care-1591489432.png'
 					alt='Logo'
@@ -14,15 +15,15 @@ const RetailersCard: React.FC = () => {
 				/>
 				<div className={styles.earn}>
 					<div className={styles.upto}>YOU EARN</div>
-					<p className={styles.rupees}>Upto Rs 17% Profit</p>
+					<p className={styles.rupees}>Upto 17% Profit</p>
 				</div>
 				<div className={styles.retailerButtons}>
 					<button className={`${styles.button} ${styles.share}`}>
 						<img
 							src={whatsappIcon}
 							alt='Whatsapp Icon'
-							height='14px'
-							width='14px'
+							height='16px'
+							width='16px'
 						/>
 						SHARE NOW
 					</button>

@@ -16,9 +16,7 @@ const DealsCard: React.FC<{
 					height='30px'
 					width='74px'
 				/>
-				<div className={styles.ribbon}>
-					<p className={styles.ribbonText}>FLASH SALE</p>
-				</div>
+				<div className={styles.ribbon}>FLASH SALE</div>
 				<img
 					className={styles.image}
 					src={props.imageLink}
@@ -27,7 +25,10 @@ const DealsCard: React.FC<{
 				{props.showDealEnd ? (
 					<div className={styles.dealEnd}>
 						<p className={styles.dealTitle}>DEAL ENDS IN</p>
-						<p className={styles.dealTimer}>08 h: 58 m: 44 s</p>
+						<p className={styles.dealTimer}>
+							01&nbsp;<span>d</span>: 08&nbsp;<span>h</span>:
+							58&nbsp;<span>m</span>: 44&nbsp;<span>s</span>
+						</p>
 					</div>
 				) : (
 					''
