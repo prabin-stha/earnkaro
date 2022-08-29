@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import config from '../../config/config';
+// import config from '../../config/config';
+import imageData from '../../constant/data';
 
 import styles from './Category.module.css';
 
@@ -8,18 +9,36 @@ const Category: React.FC = () => {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	let [data, setData] = useState<any>(null);
 
+	// useEffect(() => {
+	// 	const fetchImageLinks = async () => {
+	// 		const response = await fetch(
+	// 			`http://localhost:${config.port}/category`
+	// 		);
+	// 		const resData = await response.json();
+	// 		return resData;
+	// 	};
+	// 	fetchImageLinks().then(data => {
+	// 		setData(data);
+	// 	});
+	// }, []);
+
+	// let dataMarkup: any;
+	// if (data) {
+	// 	dataMarkup = data[currentIndex].links.map((el: any, i: number) => {
+	// 		return (
+	// 			<img
+	// 				key={i}
+	// 				className={styles.categoryImage}
+	// 				src={`${el}`}
+	// 				alt={`${i + 1}`}
+	// 			></img>
+	// 		);
+	// 	});
+	// }
+
 	useEffect(() => {
-		const fetchImageLinks = async () => {
-			const response = await fetch(
-				`http://localhost:${config.port}/category`
-			);
-			const resData = await response.json();
-			return resData;
-		};
-		fetchImageLinks().then(data => {
-			setData(data);
-		});
-	}, []);
+		setData(imageData.category);
+	}, [data]);
 
 	let dataMarkup: any;
 	if (data) {

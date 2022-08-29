@@ -4,8 +4,8 @@ import whatsappIcon from '../../../static/images/whatsapp.svg';
 
 const RetailersCard: React.FC = () => {
 	return (
-		<div className={styles.outerContainer}>
-			<div className={styles.innerContainer}>
+		<div className={styles.outerContainer} style={{ margin: '0px' }}>
+			<div className={styles.innerContainer} style={{ margin: '0px' }}>
 				<div className={styles.ribbon}>15% OFF SITEWIDE</div>
 				<img
 					src='https://asset20.ckassets.com/resources/image/stores/wow-skin-care-1591489432.png'
